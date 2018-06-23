@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "os.mhc.rpc.server";
+option java_outer_classname = "NameProto";
+option objc_class_prefix = "NS";
+
+package server;
+
+service Service {
+    rpc getIpByName (Name) returns (Ip) {
+    }
+}
+
+message Name {
+    string name = 1;
+}
+
+message Ip {
+    string ip = 1;
+}
