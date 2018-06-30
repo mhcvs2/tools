@@ -4,3 +4,8 @@
 *.class
 *.exe
 
+.gradle/
+
+*.iml
+build/
+out/
